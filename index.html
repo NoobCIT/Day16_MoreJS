@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='eng'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+    <title>Day 17: MoreJS</title>
+    <link href='styles.css' rel='stylesheet'>
+  </head>
+  <body>
+  <div class='container'>
+    <div class='resizes sub'>
+      <h3>The window has been resized: <span id='resizeCount'>0</span></h3>
+    </div>
+    <div class='clicking sub'>
+      <button id='click1' onclick='clickCounter()'>You clicked me <span id='clickCount'>0</span> times</button>
+    </div>
+    <div class='clicking sub'>
+      <button id='click2'>You clicked me <span id='clickCount2'>0</span> times</button>
+    </div>
+    <div class='localStorage sub'>
+      <p>Save something to localStorage!</p>
+      <form id='save'>
+        <input id='key' type='text' placeholder='Store a Key in Local Storage' required></input>
+        <input id='value' type='text' placeholder='Store a Value in Local Storage' required></input>
+        <button type='submit'>Submit</button>
+      </form>
+      <p>Retrieve the value you saved using your key!</p>
+      <form id='retrieve'>
+        <input id='getValue' type='text' placeholder='Enter your key' required></input>
+        <button type='submit'>Submit</button>
+      </form>
+      <p id='showValue'></p>
+      <p>Note you can close out of your browser and comeback, it will still be in your local storage</p>
+      <p>Find localstorage by Right Click Page -> Inspect -> Application Heading -> LocalStorage (sidebar)</p>
+    </div>
+  </div>
+
+  <script src='scripts.js'></script>
+  </body>
+</html>
